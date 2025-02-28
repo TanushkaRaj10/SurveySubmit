@@ -50,7 +50,7 @@ function SurveyForm() {
 
     try {
       setIsDisabled(true);
-      await axios.post("http://127.0.0.1:8000/submit", formData);
+      await axios.post("https://survey-ea3217vgw-tanushkaraj10s-projects.vercel.app/", formData);
       setIsSubmitted(true);
     } catch (error) {
       console.error("Error submitting survey:", error);

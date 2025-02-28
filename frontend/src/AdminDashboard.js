@@ -7,7 +7,7 @@ function AdminDashboard() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/responses?password=admin")
+      .get("https://survey-ea3217vgw-tanushkaraj10s-projects.vercel.app/responses?password=admin")
       .then((res) => {
         console.log("API Response:", res.data);
         setResponses(res.data);
